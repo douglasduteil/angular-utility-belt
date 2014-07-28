@@ -21,6 +21,10 @@ gulp.task('pages', function() {
   run('ng-factory:clean/docs(pages)', ['ng-factory:views/docs(pages)', 'connect:src'], ['open:src', 'watch:src']);
 });
 
+gulp.task('test', function() {
+  run('ng-factory:templates/src(tmp)', 'ng-factory:test(src)');
+});
+
 
 // var runSequence = require('run-sequence');
 // gulp.task('default', ['dist']);
