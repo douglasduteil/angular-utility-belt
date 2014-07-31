@@ -1,10 +1,6 @@
 'use strict';
 
-var gulp = require('gulp');
-var config = require('./../../config');
-var rimraf = require('gulp-rimraf');
+var cleanTaskGenerator = require('./cleanTaskGenerator');
 
-gulp.task('ng-factory:clean/src(dist)', function() {
-  return gulp.src([config.src.dest], {read: false})
-    .pipe(rimraf());
-});
+cleanTaskGenerator('src', 'dist');
+cleanTaskGenerator('src', 'tmp');

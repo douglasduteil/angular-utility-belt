@@ -13,3 +13,10 @@ gulp.task('ng-factory:clean/docs(tmp)', function() {
   return gulp.src(config.docs.tmp, {read: false})
     .pipe(rimraf());
 });
+
+/*
+var cleanTaskGenerator = require('./cleanTaskGenerator');
+
+cleanTaskGenerator('docs', 'dest');
+cleanTaskGenerator('docs', 'tmp');
+*/

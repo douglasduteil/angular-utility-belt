@@ -22,7 +22,7 @@ gulp.task('pages', function() {
 });
 
 gulp.task('test', function() {
-  run('ng-factory:templates/src(tmp)', 'ng-factory:test(src)');
+  run('ng-factory:clean/src(tmp)', ['ng-factory:templates/src(tmp)', 'ng-factory:test(src)']);
 });
 // alias
 gulp.task('karma', ['test']);
