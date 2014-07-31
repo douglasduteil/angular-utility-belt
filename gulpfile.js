@@ -24,7 +24,8 @@ gulp.task('pages', function() {
 gulp.task('test', function() {
   run('ng-factory:templates/src(tmp)', 'ng-factory:test(src)');
 });
-
+// alias
+gulp.task('karma', ['test']);
 
 // var runSequence = require('run-sequence');
 // gulp.task('default', ['dist']);
