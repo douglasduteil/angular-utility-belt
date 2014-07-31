@@ -12,8 +12,5 @@ gulp.task('ng-factory:templates/src(tmp)', function() {
   // Build unified pkg.name template
   gulp.src(src.templates, {cwd: src.cwd})
     .pipe(ngtemplate({module: pkg.name}))
-    .pipe(rename({
-      extname: '.js'
-    }))
     .pipe(gulp.dest(src.tmp + '/templates'))
 });
