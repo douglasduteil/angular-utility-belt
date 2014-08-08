@@ -42,6 +42,8 @@ exports.ports = {
   pages: 9090
 };
 
+exports.syncDuration = 1000;
+
 exports.banner = gutil.template('/**\n' +
   ' * <%= pkg.name %>\n' +
   ' * @version v<%= pkg.version %> - <%= today %>\n' +

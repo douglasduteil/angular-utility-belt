@@ -32,3 +32,4 @@ require('./tasks/readme/src.js');
 require('./tasks/views/docs.js');
 require('./tasks/jshint/src');
 require('./tasks/jshint/test');
+require('./tasks/sync/sync');
