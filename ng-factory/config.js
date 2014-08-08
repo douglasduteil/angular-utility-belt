@@ -42,7 +42,7 @@ exports.ports = {
   pages: 9090
 };
 
-exports.syncDuration = 1000;
+exports.syncDuration = 500;
 
 exports.banner = gutil.template('/**\n' +
   ' * <%= pkg.name %>\n' +
@@ -60,3 +60,10 @@ exports.locals = {
   docs: exports.docs,
   modules: exports.modules
 };
+
+exports.computedLocals = require('./computeLocals')({
+  pkg: pkg,
+  src: exports.src,
+  docs: exports.docs,
+  modules: exports.modules
+});

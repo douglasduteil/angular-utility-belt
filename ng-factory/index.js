@@ -29,6 +29,8 @@ require('./tasks/scripts/docs.js');
 require('./tasks/styles/src.js');
 require('./tasks/styles/docs.js');
 require('./tasks/readme/src.js');
+require('./tasks/readme/tmp');
+require('./tasks/readme/out');
 require('./tasks/views/docs.js');
 require('./tasks/jshint/src');
 require('./tasks/jshint/test');
