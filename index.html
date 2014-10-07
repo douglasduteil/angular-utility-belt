@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="bar.jumbotron">
+
+  <title>bar.jumbotron - Jumbotron are styled web site header.</title>
+  <meta name="description" content="Jumbotron are styled web site header."/>
+
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.0/es5-shim.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+  <!-- Favicon  -->
+  <link rel="icon" href="http://angularjs.org/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://angularjs.org/favicon.ico" type="image/x-icon">
+  <!-- Author of this application  -->
+  <link rel="author" href="https://github.com/foo">
+
+  <!-- Le css -->
+
+  
+  <!-- build:css styles/components.min.css -->
+  <!-- bowerDependencies:css -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/theme.min.css -->
+  <!-- themeDependencies:css -->
+  <link rel="stylesheet" href="styles/theme.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+  
+
+
+
+
+</head>
+<body>
+
+
+
+<nav role="navigation" class="navbar navbar-fixed-top bs-docs-nav">
+  <div class="container">
+    <div class="navbar-header"><a href="#" class="navbar-brand">bar.jumbotron</a></div>
+    <div class="navbar-content">
+      <ul class="nav navbar-nav">
+        <!-- TODO Add routes to more stuff ? -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://travis-ci.org/douglasduteil/angular-utility-belt" target="_blank"><img title="Build Status"  src="http://img.shields.io/travis/douglasduteil/angular-utility-belt.svg" ></a></li>
+        <li><a href="http://url" target="_blank"><img title="Coverage Status"  src="http://img.shields.io/codeclimate/coverage/github/douglasduteil/angular-utility-belt.svg" ></a></li>
+        <li><a href="http://github.com/douglasduteil/angular-utility-belt/releases" target="_blank"><img title="Github Releases"  src="http://img.shields.io/badge/release-v0.0.0-orange.svg" ></a></li>
+        
+        
+        <li><a href="//github.com/douglasduteil/angular-utility-belt" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron bs-jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h1>bar.jumbotron</h1>
+
+        <p>Jumbotron are styled web site header.</p>
+      </div>
+
+      <div class="col-md-3 docs-social">
+        <ul class="list-unstyled">
+          <li class="btn-github">
+            <iframe
+              src="http://ghbtns.com/github-btn.html?user=douglasduteil&amp;repo=angular-utility-belt&amp;type=watch&amp;count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+          </li>
+          <li class="btn-github">
+            <iframe
+              src="http://ghbtns.com/github-btn.html?user=douglasduteil&amp;repo=angular-utility-belt&amp;type=fork&amp;count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+          </li>
+          <!-- Remove because has inconstant witch (dep of the github user name)
+          <li class="btn-github">
+            <iframe src="http://ghbtns.com/github-btn.html?user=douglasduteil&amp;type=follow&amp;count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="190" height="20"></iframe>
+          </li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h1 id="getting-started">Getting started</h1>
+<h2 id="quick-start">Quick start</h2>
+<p>Install bar.jumbotron with <a href="https://github.com/bower/bower">Bower</a>.</p>
+<pre><code class="lang-bash">$ bower install bar.jumbotron --save
+</code></pre>
+<p>Include the required libraries is your <code>index.html</code>:</p>
+<pre><code class="lang-bash">&lt;script src=&quot;bower_components/angular/angular.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bower_components/jumbotron/jumbotron.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bower_components/jumbotron/jumbotron.tpl.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>Inject the <code>bar.jumbotron</code> module into your app:</p>
+<pre><code class="lang-bash">angular.module(&#39;myApp&#39;, [&#39;mgcrea.ngStrap&#39;]);
+</code></pre>
+<h2 id="developers">Developers</h2>
+<p>Clone the repo, <code>git clone git://github.com/douglasduteil/angular-utility-belt/.git</code>, <a href="https://github.com/douglasduteil/angular-utility-belt/zipball/master">download the latest release</a> or install with bower <code>bower install bar.jumbotron#master --save</code>.</p>
+<p>AngularStrap is tested with <code>karma</code> against the latest stable release of AngularJS.</p>
+<pre><code class="lang-bash">$ npm install
+$ gulp test
+</code></pre>
+<p>You can build the latest version using <code>gulp</code>.</p>
+<pre><code class="lang-bash">$ gulp dist
+</code></pre>
+<p>You can quickly hack around (the docs) with:</p>
+<pre><code class="lang-bash">$ gulp serve
+</code></pre>
+<h2 id="contributing">Contributing</h2>
+<p>Please submit all pull requests the against master branch. If your unit test contains JavaScript patches or features, you should include relevant unit tests. Thanks!</p>
+
+  <section id="module-jumbotron">
+
+  <header class="page-header">
+    <h1 id="module-jumbotron-title"> Jumbotron
+      <a class="small"
+         href="//github.com/douglasduteil/angular-utility-belt/blob/src0.0.0/jumbotron"
+        >
+        jumbotron.js
+      </a>
+    </h1>
+  </header>
+
+
+  <h2 id="module-jumbotron-examples">Examples</h2>
+
+
+  <ul>
+    
+    <li><a href="jumbotron/docs/examples/basic-example.html">basic-example.html</a></li>
+  </ul>
+
+  <h2 id="module-jumbotron-usage">Usage</h2>
+  <h2 id="module-jumbotron-options">Options</h2>
+
+  <div class="bs-markdown">
+
+  <h3 id="directive">directive</h3>
+<h4 id="jumbotrondirective">jumbotronDirective</h4>
+<p>The jumbotron directive. Have a sweet header.</p>
+<h5 id="arguments">Arguments</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+<tr>
+  <td>
+    title  <em>(optional)</em>
+  </td>
+  <td>
+
+    <code>string</code>
+
+  </td>
+  <td>
+    <p>The jumbotron title.</p>
+
+    Defaults : <code>‘Hello World’</code>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    class  <em>(optional)</em>
+  </td>
+  <td>
+
+    <code>string</code>
+
+  </td>
+  <td>
+    <p>The jumbotron additional class.</p>
+
+    Defaults : <code>‘jumbotron—bar’</code>
+  </td>
+</tr>
+
+
+
+  </tbody>
+</table>
+
+
+
+
+<h3 id="object">object</h3>
+<h4 id="barjumbotronconfig">barJumbotronConfig</h4>
+<h5 id="properties">Properties</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Param</th>
+      <th>Type</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+<tr>
+  <td>
+    class<br>  </td>
+  <td>
+
+    <code>string</code>
+
+  </td>
+  <td>
+    <p>the class name</p>
+
+
+  </td>
+</tr>
+
+<tr>
+  <td>
+    title<br>  </td>
+  <td>
+
+    <code>string</code>
+
+  </td>
+  <td>
+    <p>the title</p>
+
+
+  </td>
+</tr>
+
+<tr>
+  <td>
+    templateUrl<br>  </td>
+  <td>
+
+    <code>string</code>
+
+  </td>
+  <td>
+    <p>the used template URL</p>
+
+
+  </td>
+</tr>
+
+
+
+  </tbody>
+</table>
+
+
+
+
+
+
+
+  </div>
+
+ </section>
+
+</div>
+<div class="page-footer">
+  <hr/>
+  <div class="container">
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p><a href="//github.com/douglasduteil/angular-utility-belt/issues">Help improve these docs. Open an issue or pull request.</a></p>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- build:libs scripts/components.min.js -->
+<!-- bowerDependencies:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endinject -->
+<!-- endbuild -->
+
+
+<!-- build:libs scripts/theme.min.js -->
+<!-- themeDependencies:js -->
+<!-- themeDependencies scripts will go here... -->
+<!-- endinject -->
+<!-- endbuild -->
+
+
+
+
+</body>
+</html>
