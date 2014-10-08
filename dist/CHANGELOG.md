@@ -1,3 +1,49 @@
+### 0.0.4 (2014-10-08)
+
+
+#### Bug Fixes
+
+* **deploy:** forgot to re-enable the push... sry ([a7abbbbf](https://github.com/douglasduteil/angular-utility-belt/commit/a7abbbbf8a8bf48520ac7f9625099e9db562c236))
+
+
+### 0.0.3 (2014-10-08)
+
+
+#### Bug Fixes
+
+* **deploy:** pages cwd conflic to get pkg ([afd6f281](https://github.com/douglasduteil/angular-utility-belt/commit/afd6f28130bc9d56622ccb215ae022a3c93833ba))
+
+
+### 0.0.2 (2014-10-08)
+
+
+#### Bug Fixes
+
+* **pages:** no pkg object avalaible in the template ([6c69a3fe](https://github.com/douglasduteil/angular-utility-belt/commit/6c69a3fe8db7e61f9f05f52f7ee97520d149459f))
+
+
+#### Features
+
+* **pages:** Add static tag release bagde image ([c5c570de](https://github.com/douglasduteil/angular-utility-belt/commit/c5c570de1083204d9b549f8033c3aeee63f166ca))
+
+
+### 0.0.1 (2014-10-08)
+
+
+#### Bug Fixes
+
+* **deploy:** add missing required path ([9c274435](https://github.com/douglasduteil/angular-utility-belt/commit/9c274435fa569ba99640d281aa62b2b929bc6ff7))
+
+
+#### Features
+
+* **config:** dont cache the pkg file ([d60903f6](https://github.com/douglasduteil/angular-utility-belt/commit/d60903f6ffc03beb1dc07a9602590090690e6f5d))
+* **deploy:**
+  * sweet getting last pkg version ([570da4fe](https://github.com/douglasduteil/angular-utility-belt/commit/570da4fe7f740bfb0eebb6b9f856e3f037cb1b47))
+  * update the pkg after bump ([634938cc](https://github.com/douglasduteil/angular-utility-belt/commit/634938cc9fa128d8c9ec719be6e63b575c5cf2ee))
+* **jumbotron:** fake important feature ([7f242fc7](https://github.com/douglasduteil/angular-utility-belt/commit/7f242fc73931d03a4fb5146d425b4cd91306ac17))
+
+
 ## 0.0.0 (2014-10-08)
 
 
